@@ -15,7 +15,9 @@
 #include <sstream>
 #include <string>
 
-int quick_sort_swap_count(std::vector<int> vec);
-int exec_quick_sort_swap_count(std::string file_name);
+enum PIVOT_TYPE{FIRST, LAST, COMPARE};
+
+int quick_sort_swap_count(std::vector<int> vec, PIVOT_TYPE pivot_type);
+int exec_quick_sort_swap_count(std::string file_name, PIVOT_TYPE pivot_type);
 
 #endif /* quick_sort_h */
